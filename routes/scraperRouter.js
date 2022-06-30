@@ -3,18 +3,18 @@ const router = express.Router();
 const starWarsController = require("../controllers/starWarsController");
 
 // Gets all Star Wars Characters
-router.get("/all", starWarsController.getAllStarWarsChars);
+router.get("/all", starWarsController.getAllChars);
 
 // Gets single Star Wars Character
-router.get("/", starWarsController.getStarWarsChar);
+router.get("/", starWarsController.getChar);
 
 // Creates Star Wars Character
-router.post("/", starWarsController.addStarWarsChar);
+router.post("/", starWarsController.addChar);
 
 // Updates Star Wars Character
-router.patch("/", starWarsController.updateChar);
+router.patch("/", starWarsController.updChar);
 
 // Deletes Star Wars Character
-router.delete("/", starWarsController.deleteChar);
+router.delete("/", starWarsController.delChar);
 
 module.exports = router;
